@@ -1,0 +1,61 @@
+header{
+    background-image: url(../main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-blend-mode: overlay;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+a.navbar-brand{
+    padding-left:6%;
+    color: #fff;
+    text-decoration: none;
+    
+}
+a.navbar-brand:hover{
+    color: #fff;
+}
+
+form{
+    align-self: center;
+}
+
+div.dropdown{
+    justify-content: end;
+}
+
+
+
+input.form-control {
+    border-radius: 36px;
+    }
+
+#name{
+
+    color: #fff;
+}
+
+#share{
+    margin-top: 20%;
+    margin-left: 73%;
+    border-radius:  36px;
+    
+}
+
+#card{
+    margin-left: 10%;
+
+}
+
+.card{
+    position: absolute;
+    z-index: 5;
+    -webkit-box-shadow: 0 0 10px ;
+        box-shadow: 0 0 10px ;
+}
+
+#main{
+    background-color: rgba(255, 255, 255, 0.719);
+}
