@@ -9,17 +9,43 @@
     <title>Clone</title>
 </head>
 <body>
-    <header>
+    <header >
         <div class="container">
             <div class="row">
-                <nav class="navbar navbar-expand-lg " id="nav1">
-                    <a class="navbar-brand"  href="#">🔊 Sound</a>
-                    <div class="col-md-4 my-2"></div>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="🔍 Search Here" aria-label="Search">
+                <nav class="navbar navbar-expand-lg " id="nav1" >
+                    <div class="dropdown" id="newdash">
+                        <button class="btn"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg id="dash" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                            
+                        </button>
+                        <div class="dropdown-menu" >
+                          <a class="dropdown-item" href="#">Link</a>
+                          <a class="dropdown-item" href="#">Link</a>
+                          <a class="dropdown-item" href="#">Link</a>
+                        </div>
+                      </div>
+                    <a class="navbar-brand"  href="#">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-soundwave" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z"/>
+                        </svg> Soundwave
+                    </a>
+                    <div class="col-md-4 my-2" id="gsa"></div>
+                    
+                    <form class="form-inline my-2 my-lg-0" id="search">
+                        <input class="form-control mr-sm-2" id="searchbox" type="search" placeholder="🔍 Search Here" aria-label="Search">
+                        
                     </form>
-                    <div class="col-md-4"></div>
-                    <div class="dropdown">
+                    <button style="background-color: inherit; border: none;">
+                        <svg id="icons" width="1.3em" height="2em" viewBox="0 0 16 16" class="bi bi-search" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="col-md-4 d-flex justify-content-end"></div>
+                    <div class="dropdown" id="olddash">
                         <button class="btn"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <svg id="dash" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -35,14 +61,15 @@
                 </nav>
             </div>
 
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-3"></div>
-                <div class="col-md-4">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+            <div class="row align-items-center justify-content-center" id="mainnav">
+                <div class="col-md-3" ></div>
+                <div class="col-md-4" id="123">
+                    <br id="break">
+                    <br id="break">
+                    <br id="break">
+                    <br id="newbreak">
+                    <br id="newbreak breakput">
+
                     <h1 id="name" >
                         Jessie Schwatz
                         <br>
@@ -50,10 +77,15 @@
                     </h1>
                    
                 </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-4 my-2" >
-                    <button type="button" id="share" class="btn btn-outline-light">Share Profile</button>
+                <div class="col-md-1" id="xyz"></div>
+                <div class="col-md-4 my-2 d-flex justify-content-end" id="sharebut" >
+                    <button type="button" id="share" class="btn btn-outline-light">Share Profile
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-share-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+                          </svg>
+                    </button>
                 </div>
+                
             </div>
 
         </div>
@@ -62,9 +94,10 @@
     <section id="main">
         
         <div class="container">
+            <hr id="hr">
             <div class="row">
                 <div class="col-md-3" id="card">
-                    <div class="card" style="width: 18rem; margin-left: 0%; margin-top: -40%;">
+                    <div class="card" >
                         <img src="img/card.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Jessie Schwatz</h5>
@@ -75,8 +108,9 @@
                 </div>
 
         
+                
                 <div class="col-md-4">
-                    <div class="card" style="width: 45rem; height: 10rem; margin-top: 5%; ">
+                    <div class="card" id="soundcard" style="">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -85,9 +119,7 @@
                         </div>
                     </div>    
                 </div>
-        
-        
-        </div>
+            </div>
         </div>
     
     </section>
@@ -103,5 +135,6 @@
 
 
     <script src="js/bootstrap.min.js"></script>
+    
 </body>
 </html>
