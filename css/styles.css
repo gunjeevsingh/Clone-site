@@ -7,6 +7,9 @@ header{
     font-family: 'Montserrat', sans-serif;
     
 }
+#hr{
+    display: none;
+}
  a.navbar-brand{
      color: #fff;
      text-decoration: none;
@@ -15,12 +18,261 @@ header{
     color: #fff;
     text-decoration: none;
 }
-
+#icons{
+    display: none;
+}
 #share{
-    margin-left: 55%;
+    margin-right: 15%;
     margin-top: 25%;
 }
-
+#newdash{
+    display: none;
+}
 #name{
     color: #fff;
+}
+
+#card{
+    margin-left: 0%;
+    margin-top: -10%;
+    width: 18rem;
+    
+}
+
+#soundcard{
+    width: 45rem;
+    height: 10rem;
+    margin-top: 5%;
+}
+
+@media screen and (max-width:1400px){
+    #name{
+        margin-left: 5%;
+    }
+    #share{
+        margin-right: 5%;
+    }
+    #soundcard{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width:1200px){
+    #name{
+        margin-left: 5%;
+        font-size: 2.3em;
+    }
+    #card{
+        margin-left: -5%;
+        margin-top: -10%;
+    }
+    #soundcard{
+        margin-left: 25%;
+        width: 35rem;
+    }
+    #share{
+        margin-top: 35%;
+    }
+}
+
+@media screen and (max-width:1050px){
+    
+    #name{
+     
+        white-space: nowrap;
+    }
+    #soundcard{
+        margin-left: 6%;
+    }
+    #card{
+        margin-left: 0%;
+        width: 15rem;
+    }
+    #searchbox{
+        margin-left: -40%;
+        width: initial;
+    }
+    #olddash{
+        margin-left: -15%;
+    }
+
+}
+@media screen and (max-width:992px){
+
+    #gsa{
+        display: none;
+    }
+    #searchbox{
+        margin-left: 50%;
+    }
+    #card{
+        width: 14rem;
+        margin-left: -5%;
+        margin-top: -15%;
+    }
+    #soundcard{
+        width: 28rem;
+    }
+    #share{
+        margin-top: 49%;
+    }
+    
+
+
+}
+@media screen and (max-width:775px){
+    #share{
+        display: none;
+    }
+    #name{
+        margin-left: 100%;
+    }
+    #card{
+        margin-left: 1%;
+    }
+    #soundcard{
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width:767px){
+
+    #name{
+        margin-left: 65%;
+        margin-bottom: -2%;
+    }
+    .navbar-brand{
+        margin-left: -10%;
+    }
+    #searchbox{
+        margin-left: 20%;
+    }
+    #dropdownMenuButton{
+        margin-left: 175%;
+    }
+    #card{
+        margin-left: -15%;
+        height: 8rem;
+        margin-top: -17%;
+    }
+    #soundcard{
+        margin-left: 30%;
+        margin-top: -5%;
+    }
+    #break{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:710px){
+
+    
+    #newdash{
+        display: inline-block;
+        margin-left: -35%;
+    }
+    #olddash{
+        display: none;
+    }
+    .navbar-brand{
+        margin-left: 6%;
+    }
+    #searchbox{
+        margin-left: 60%;
+        
+        
+        opacity: 1;
+    }
+    #hr{
+        display: inherit;
+    }
+    
+    #newbreak{
+        display: none;
+    }
+    #name{
+        margin-left: 25%;
+    }
+    #card{
+        margin-top: 0%;
+        margin-left: 0%;
+        height: 6rem;
+    }
+    #soundcard{
+        width: 18.5rem;
+        margin-top: -19%;
+        margin-left: 43%;
+    }
+}
+@media screen and (max-width:426px){
+    #search{
+        display: none;
+    }
+    #newdash{
+        margin-left: -25%;
+    }
+    .navbar-brand{
+        margin-left: 5%;
+    }
+    #soundcard{
+        display:none;
+    }
+    #icons{
+        display: inline-block;
+        margin-left: 200%;
+    }
+    #name{
+        font-size: 1.9em;
+        margin-left: 22%;
+    }
+    #card{
+        width: 20rem;
+        margin-left: 11%;
+    }
+
+}
+
+@media screen and (max-width:376px){
+    #search{
+        display: none;
+    }
+    .navbar-brand{
+        margin-left: 10%;
+    }
+    #newdash{
+        margin-left: -35%;
+    }
+    #soundcard{
+        display:none;
+    }
+    #icons{
+        display: inline-block;
+        margin-left: 250%;
+    }
+    #name{
+        font-size: 1.7em;
+        margin-left: 20%;
+    }
+    #card{
+        width: 20rem;
+        margin-left: 5%;
+    }
+
+}
+@media screen and (max-width:321px){
+
+    #card{
+        width: 17rem;
+
+    }
+    #newdash{
+        margin-left: -40%;
+    }
+    .navbar-brand{
+        margin-left: 20%;
+    }
+    #icons{
+        margin-left: 110%;
+    }
+
 }
