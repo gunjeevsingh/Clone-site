@@ -1,3 +1,5 @@
-# Clone-site
-This repo contains the code i had writtem to clone a webpage.
-Check original -> Model.png
+<html>
+  <body>
+    <h1>Clone Website</h1>
+    <body>
+  </html>
