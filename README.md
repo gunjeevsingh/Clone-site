@@ -7,6 +7,7 @@
     <h2>The reference of the page I had cloned:</h2>
     <img src=model.png>
     <hr>
-    <h1>
+    <h1> Screenshot of my clone: </h1>
+    <img src=screenshot.png>
     <body>
   </html>
